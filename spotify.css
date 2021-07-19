@@ -2,6 +2,15 @@ body {
     background-color: purple;
 }
 
+#pageBody {
+    display: flex;
+    align-items: stretch;  
+}
+
+#navbar-pagecontent {
+    width: 100%;
+}
+
 .navbarButtons{
     color: white;
     border-radius: 50%;
@@ -22,4 +31,8 @@ body {
     background-color: aqua;
     min-width: 200px;
     height: 100vh;
+}
+
+.navbar{
+    width: 100%;
 }
