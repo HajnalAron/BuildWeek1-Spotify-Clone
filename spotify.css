@@ -1,5 +1,6 @@
 body {
     background-color: purple;
+    
 }
 
 #mainBody {
@@ -68,4 +69,8 @@ hr.sidebarHr {
 
 .navbar{
     width: 100%;
+}
+#player {
+    background-color: #181818;
+    z-index: 10;
 }
