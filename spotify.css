@@ -2,7 +2,7 @@ body {
     background-color: purple;
 }
 
-#pageBody {
+#mainBody {
     display: flex;
     align-items: stretch;  
 }
@@ -31,6 +31,11 @@ body {
     background-color: rgb(0, 0, 0);
     min-width: 200px;
     height: 100vh;
+}
+
+#spotifyLogo {
+    width: 125px;
+    margin:15px 0 15px 20px;  
 }
 
 .navbar{
