@@ -17,3 +17,9 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     height: 32px;
 } 
+
+#sidebar {
+    background-color: aqua;
+    min-width: 200px;
+    height: 100vh;
+}
