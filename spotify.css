@@ -9,6 +9,7 @@ body {
 
 #navbar-pagecontent {
     width: 100%;
+    margin-left: 250px;
 }
 
 .navbarButtons{
@@ -29,13 +30,40 @@ body {
 
 #sidebar {
     background-color: rgb(0, 0, 0);
-    min-width: 200px;
-    height: 100vh;
+    min-width: 250px;
+    min-height: 100vh;
 }
 
 #spotifyLogo {
     width: 125px;
     margin:15px 0 15px 20px;  
+}
+
+#sidebar > ul > li > a {
+    color: #b3b3b3 !important;
+}
+
+hr.sidebarHr {    
+    color: #b3b3b3;
+    background-color: #282828;
+    border: none;
+    height: 1px;
+    min-height: 1px;
+}
+
+#sidebar .nav-link{
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar .nav-item{
+    padding: 0 24px;
+    margin: 0;
+}
+
+.sidebar > h5 {
+    padding: 0;
+    margin: 0;
 }
 
 .navbar{
