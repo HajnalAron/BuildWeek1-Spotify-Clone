@@ -71,6 +71,36 @@ hr.sidebarHr {
     width: 100%;
 }
 #player {
+    height: 60px;
     background-color: #181818;
     z-index: 10;
+}
+.player-album {
+font-size: 12px;
+font-weight: 600;
+margin-top: 10px;
+margin-bottom: 0;
+}
+.player-artist {
+font-size: 10px;
+color: #b3b3b3;
+}
+.icons-player-album {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: #b3b3b3;
+}
+.icons-player-middle {
+   display: flex;
+   justify-content: center;
+}
+.timeline-player {
+    display: flex;
+    justify-content: center;
+}
+.icons-player-right {
+    display: flex;
+    align-items: center;
+    justify-content:right;
 }
