@@ -75,6 +75,14 @@ hr.sidebarHr {
     background-color: #181818;
     z-index: 10;
 }
+#player-album-image{
+    height: 40px;
+}
+.player-album-image-container{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
 .player-album {
 font-size: 12px;
 font-weight: 600;
@@ -86,6 +94,7 @@ font-size: 10px;
 color: #b3b3b3;
 }
 .icons-player-album {
+    height: 60px;
     display: flex;
     align-items: center;
     margin-left: 15px;
@@ -94,13 +103,44 @@ color: #b3b3b3;
 .icons-player-middle {
    display: flex;
    justify-content: center;
+   margin-top: 5px;
+   margin-bottom: 10px;
 }
 .timeline-player {
     display: flex;
     justify-content: center;
 }
 .icons-player-right {
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content:right;
+    justify-content: right;
+
+ }
+ div#timeline {
+    width: 100%;
+    height: 3px;
+    background: gray;
+    display: block;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+div#progress {
+    width: 40px;
+    height: 2px;
+    background: white;
+}
+div#volume {
+    min-width: 60px;
+    height: 3px;
+    margin-left: 5px;
+    background: white;
+    display: block;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }

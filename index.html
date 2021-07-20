@@ -117,8 +117,8 @@
       <div class="row">
         <div class="col-4 d-flex">
           <div class="d-flex">
-            <div>
-            <img src="/assets/queenImage.jpg" alt="queen" style="height: 50px;">
+            <div class="player-album-image-container">
+            <img id="player-album-image" src="/assets/queenImage.jpg" alt="queen">
           </div>
           <div class="ml-2">
             <p class="player-album">
@@ -137,24 +137,26 @@
         <div class="col-4">
           <div class="icons-player-middle">
             <i class="bi bi-shuffle ml-2"></i>
-            <i class="bi bi-skip-start-fill ml-2"></i>
-            <i class="bi bi-play-circle-fill ml-2"></i>
-            <i class="bi bi-skip-end-fill ml-2"></i>
-            <i class="bi bi-arrow-repeat ml-2"></i> 
+            <i class="bi bi-skip-start-fill ml-3"></i>
+            <i class="bi bi-play-circle-fill ml-3"></i>
+            <i class="bi bi-skip-end-fill ml-3"></i>
+            <i class="bi bi-arrow-repeat ml-3"></i> 
           </div>
-          <div class="timeline-player">
-            <input type="range" id="seek-slider" max="100" value="0">
-
-          </div>
+          <div id="musicBarContainer">
+            <div id="timeline">
+                <div id="progress" style="margin-left: 0px;">
+            </div>
         </div>
-
-        <div class="col-4">
-          <div class="icons-player-right">
-            <i class="bi bi-volume-up"></i>
-            <i class="bi bi-music-note-list"></i>
-          </div>
         </div>
       </div>
+        <div class="col-4">
+          <div class="icons-player-right">
+            <i class="bi bi-music-note-list"></i>
+            <i class="bi bi-laptop ml-3"></i>
+            <i class="bi bi-volume-up ml-3"></i>
+            <div id="volume"></div>
+          </div>
+        </div>
     </div>
     </div>
 
