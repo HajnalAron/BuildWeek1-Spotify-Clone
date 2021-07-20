@@ -1,5 +1,16 @@
 body {
     background-color: purple;
+    
+}
+
+#mainBody {
+    display: flex;
+    align-items: stretch;  
+}
+
+#navbar-pagecontent {
+    width: 100%;
+    margin-left: 250px;
 }
 
 .navbarButtons{
@@ -17,3 +28,191 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     height: 32px;
 } 
+
+#sidebar {
+    background-color: rgb(0, 0, 0);
+    min-width: 250px;
+    min-height: 100vh;
+}
+
+#spotifyLogo {
+    width: 125px;
+    margin:15px 0 15px 20px;  
+}
+
+#sidebar > ul > li > a {
+    color: #b3b3b3 !important;
+}
+
+hr.sidebarHr {    
+    color: #b3b3b3;
+    background-color: #282828;
+    border: none;
+    height: 1px;
+    min-height: 1px;
+}
+
+#sidebar .nav-link{
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar .nav-item{
+    padding: 0 24px;
+    margin: 0;
+}
+
+.sidebar > h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebarContainer {
+    height: 24px;
+    width: 150px;
+}
+ 
+#sidebar > ul > li:nth-child(1){
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+#sidebar > ul > li:nth-child(2){
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+#sidebar > ul > li:nth-child(3){
+    padding-top:8px;
+    padding-bottom: 50px;
+}
+#sidebar > ul > li:nth-child(4){
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+#sidebar > ul > li:nth-child(5){
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+ 
+.sideBarIconContainer {
+    display: flex;
+    justify-content:center;
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+ 
+li a div h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    
+}
+ 
+.navbar{
+    width: 100%;
+}
+
+.navUserName{
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+
+#player {
+    height: 60px;
+    background-color: #181818;
+    z-index: 10;
+}
+#player-album-image{
+    height: 40px;
+}
+.player-album-image-container{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.player-album {
+font-size: 12px;
+font-weight: 600;
+margin-top: 10px;
+margin-bottom: 0;
+}
+.player-artist {
+font-size: 10px;
+color: #b3b3b3;
+}
+.icon-size-player {
+    font-size: 0.7rem;
+    color: #b3b3b3;
+}
+.icons-player-album {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: #b3b3b3;
+}
+.icons-player-middle {
+   display: flex;
+   justify-content: center;
+   margin-top: 5px;
+   
+}
+.timeline-player {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons-player-right {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+ }
+ .player-column {
+
+ }
+
+ #musicBarContainer{
+     margin-top: 0;
+     display: flex;
+ }
+ .timeline-time {
+    color: #b3b3b3;
+    font-size: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 36px;
+ }
+ div#timeline {
+    width: 400px;
+    height: 3px;
+    background: gray;
+    display: block;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+div#progress {
+    width: 40px;
+    height: 2px;
+    background: white;
+}
+div#volume {
+    min-width: 60px;
+    height: 3px;
+    margin-left: 5px;
+    background: white;
+    display: block;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
