@@ -10,47 +10,69 @@
 </head>
 <body>
     <div id="mainBody" class="d-flex">
-        <div id="sidebar" class="position-fixed px-1">
-            <img src="/assets/spotify-icons-logos/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_White.png" class="img-fluid" alt="" id="spotifyLogo">
-            <ul class="nav flex-column">
-                <li class="nav-item pt-1px">
-                  <a class="nav-link" href="#"><h5>Home</h5></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><h5>Search</h5></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><h5>Your Library</h5></a>
-                </li>
-                <li class="nav-item pt-3">
-                  <a class="nav-link" href="#"><h5>Create Playlist<h5></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><h5>Liked Songs</h5></a>
-                </li>
-                <li class="nav-item p-2">
-                    <hr class="sidebarHr">
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-        </div>
+      <div id="sidebar" class="position-fixed px-1">
+        <img src="/assets/spotify-icons-logos/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_White.png" class="img-fluid" alt="" id="spotifyLogo">
+        <ul class="nav flex-column">
+            <li class="nav-item pt-1">
+                <a class="nav-link" href="#">
+                  <div class="d-flex sidebarContainer">
+                    <div class="sideBarIconContainer"><i class="bi bi-house-door"></i></div>
+                    <h5>Home</h5>
+                  </div>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="d-flex sidebarContainer">
+                  <div class="sideBarIconContainer"><i class="bi bi-search"></i></div>
+                  <h5>Search</h5>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">                  
+              <a class="nav-link" href="#">
+                <div class="d-flex sidebarContainer">
+                  <div class="sideBarIconContainer"><i class="bi bi-book"></i></div>
+                  <h5 class="d-inline">Your Library</h5>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">                  
+              <a class="nav-link" href="#">
+                <div class="d-flex sidebarContainer">
+                  <div class="sideBarIconContainer" style="background:#b3b3b3; width:24px; height:24px;"><h5 class="d-inline"><i class="bi bi-plus" style="color:black;"></i></div>
+                  <h5 class="d-inline">Create Playlist</h5>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">                  
+              <a class="nav-link" href="#">
+                <div class="d-flex sidebarContainer" >
+                  <div class="sideBarIconContainer" style="background: linear-gradient(135deg,#450af5,#c4efd9);"><i class="bi bi-heart-fill"></i></div>
+                  <h5 class="d-inline">Liked Songs</h5>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item playlistItem">
+                <hr class="sidebarHr">
+            </li>
+            <li class="nav-item playlistItem">
+              <a class="nav-link" href="#">Playlist1</a>
+            </li>
+            <li class="nav-item playlistItem">
+              <a class="nav-link" href="#">Playlist2</a>
+            </li>
+            <li class="nav-item playlistItem">
+              <a class="nav-link" href="#">Playlist3</a>
+            </li>
+            <li class="nav-item playlistItem">
+              <a class="nav-link" href="#">Playlist4</a>
+            </li>
+            <li class="nav-item playlistItem">
+              <a class="nav-link" href="#">Playlist5</a>
+            </li>
+          </ul>
+    </div>
         <div id="navbar-pagecontent">    
             <nav class="navbar navbar-expand-lg w-100 sticky-top" id="navbarBody">
                 <div id="navbarFlexContainer" class="d-flex justify-content-between align-content-center w-100">
@@ -59,9 +81,9 @@
                         <button class="btn navbarButtons d-flex justify-content-center align-items-center disabled"><i class="bi bi-chevron-right"></i></button>
                     </div>
                     <button class="btn nav-item dropdown pt-3">                    
-                        <a class="nav-link dropdown-toggle d-flex align-items-center navbarDropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="pl-1 nav-link dropdown-toggle d-flex align-items-center navbarDropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="bi bi-person-circle"></i>
-                            <div class="pl-3">UserName</div>
+                            <div class="pl-1 navUserName">Strive Buildweek Spotify</div>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>

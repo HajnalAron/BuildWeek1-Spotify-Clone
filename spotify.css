@@ -67,9 +67,60 @@ hr.sidebarHr {
     margin: 0;
 }
 
+.sidebarContainer {
+    height: 24px;
+    width: 150px;
+}
+ 
+#sidebar > ul > li:nth-child(1){
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+#sidebar > ul > li:nth-child(2){
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+#sidebar > ul > li:nth-child(3){
+    padding-top:8px;
+    padding-bottom: 50px;
+}
+#sidebar > ul > li:nth-child(4){
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+#sidebar > ul > li:nth-child(5){
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+ 
+.sideBarIconContainer {
+    display: flex;
+    justify-content:center;
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+ 
+li a div h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    
+}
+ 
 .navbar{
     width: 100%;
 }
+
+.navUserName{
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+
 #player {
     height: 60px;
     background-color: #181818;
