@@ -1,5 +1,5 @@
 body {
-    background-color: purple;
+   
     
 }
 
@@ -9,8 +9,16 @@ body {
 }
 
 #navbar-pagecontent {
+    background: rgb(163, 22, 116);
+    background: linear-gradient(180deg, rgb(165, 23, 139) 0%, rgb(95, 35, 95) 30%, #191919 70%);
     width: 100%;
     margin-left: 250px;
+}
+#navbar-pagecontent-gradient{
+    background: linear-gradient(180deg, transparent 0%, rgb(34, 34, 34) 80%);
+    width: 100%;
+    
+   
 }
 
 .navbarButtons{
