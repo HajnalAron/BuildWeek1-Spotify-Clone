@@ -246,6 +246,15 @@ div#volume {
 #album-playsection .album-playbutton {
     font-size: 60px;
     color: #1DB954;
+  
+}
+
+#playbutton {
+    height: 30px;
+    width: 60px;
+    background-position: center;
+    background-color: white;
+    border-radius: 50%;
 }
 #album-playsection .album-heart {
     font-size: 30px;
