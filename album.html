@@ -74,13 +74,14 @@
           </ul>
     </div>
         <div id="navbar-pagecontent">    
+          <div></div>
             <nav class="navbar navbar-expand-lg w-100 sticky-top" id="navbarBody">
                 <div id="navbarFlexContainer" class="d-flex justify-content-between align-content-center w-100">
-                    <div id="navbarButtonContainer" class="d-flex justify-content-between pt-3">
+                    <div id="navbarButtonContainer" class="d-flex justify-content-between pt-2">
                         <button class="btn navbarButtons d-flex justify-content-center align-items-center"><i class="bi bi-chevron-left"></i></button>
                         <button class="btn navbarButtons d-flex justify-content-center align-items-center disabled"><i class="bi bi-chevron-right"></i></button>
                     </div>
-                    <button class="btn nav-item dropdown pt-3">                    
+                    <button class="btn nav-item  dropdown">                    
                         <a class="pl-1 nav-link dropdown-toggle d-flex align-items-center navbarDropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="bi bi-person-circle"></i>
                             <div class="pl-1 navUserName">Strive Buildweek Spotify</div>
@@ -95,43 +96,199 @@
                 </div>
             </nav>
             <div class="container-fluid page-content" id="pageBody">
-                <div class="row">
-                    <div class="jumbotron col-12">
-                        <h1 class="display-4">Hello, world!</h1>
-                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                        <hr class="my-4">
-                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                      </div>
-                      <div class="jumbotron col-12">
-                        <h1 class="display-4">Hello, world!</h1>
-                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                        <hr class="my-4">
-                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                      </div>
-                      <div class="jumbotron col-12">
-                        <h1 class="display-4">Hello, world!</h1>
-                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                        <hr class="my-4">
-                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                      </div>
-                      <div class="jumbotron col-12">
-                        <h1 class="display-4">Hello, world!</h1>
-                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                        <hr class="my-4">
-                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                      </div>
-                      <div class="jumbotron col-12">
-                        <h1 class="display-4">Hello, world!</h1>
-                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                        <hr class="my-4">
-                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                      </div>                
+              <div id="album-jumbotron" class="d-flex mt-4 ml-3">
+                <div>
+                  <img id="album-page-cover-image"  src="/assets/BohemianRapsody.jpg" alt="">
                 </div>
+                <div class="ml-4 d-flex-column mt-auto">
+                  <div>
+                    <h5>ALBUM</h5>
+                  </div>
+                  <div>
+                    <h1>Bohemian Rhapsody (The Original Soundtrack)</h1>
+                  </div>
+                  <div class="album-details d-flex">
+                    <div class="d-flex align-items-center">
+                      <img id="queenIcon" src="/assets/QueenIcon.jpg" alt="QueenIcon">
+                    </div>
+                    <div class="d-flex align-items-center ml-1 pt-1">
+                      <h5>Queen <span class="span">• 2018 • 22 songs, 1hr 19min</span></h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="album-playsection" class="d-flex mt-5 ml-3">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-play-circle-fill album-playbutton"></i>
+                </div>
+                <div class="d-flex align-items-center ml-5 pt-1">
+                  <i class="bi bi-heart album-heart text-white-50"></i>
+                </div>
+                <div class="d-flex align-items-center ml-4">
+                  <i class="bi bi-three-dots album-dots text-white-50"></i>
+                </div>
+              </div>
+              <div id="album-table" class="mt-4 ml-4">
+                <div class="d-flex text-white-50">
+                  <div class="ml-3 mr-3">
+                    <h6>#</h6>
+                  </div>
+                  <div>
+                    <h6>TITLE</h6>
+                  </div>
+                  <div class="ml-auto mr-5">
+                    <i class="bi bi-clock"></i>
+                  </div>
+                </div>
+
+                <hr class="mt-0">
+
+                <div class=" title-row d-flex">
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center">
+                    <h6>1</h6>
+                  </div>
+                  <div class="d-flex-column">
+                    <div>
+                      <p class="title-font">20th Century Fox Fanfare</p>
+                    </div>
+                    <div>
+                      <p class="artist-font">Queen</p>
+                    </div>
+                  </div>
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 ">
+                    <h6>0:25</h6>
+                  </div>
+                </div>
+                <div class=" title-row d-flex">
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center">
+                    <h6>2</h6>
+                  </div>
+                  <div class="d-flex-column">
+                    <div>
+                      <p class="title-font">Somebody To Love</p>
+                    </div>
+                    <div>
+                      <p class="artist-font">Queen</p>
+                    </div>
+                  </div>
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 ">
+                    <h6>4:55</h6>
+                  </div>
+                </div>
+                <div class=" title-row d-flex">
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center">
+                    <h6>3</h6>
+                  </div>
+                  <div class="d-flex-column">
+                    <div>
+                      <p class="title-font">Doing All Right - ...Revisited</p>
+                    </div>
+                    <div>
+                      <p class="artist-font">Queen</p>
+                    </div>
+                  </div>
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 ">
+                    <h6>3:16</h6>
+                  </div>
+                </div>
+                <div class=" title-row d-flex">
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center">
+                    <h6>4</h6>
+                  </div>
+                  <div class="d-flex-column">
+                    <div>
+                      <p class="title-font">Keep Yourself Alive - Live At The Rainbow</p>
+                    </div>
+                    <div>
+                      <p class="artist-font">Queen</p>
+                    </div>
+                  </div>
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 ">
+                    <h6>3:56</h6>
+                  </div>
+                </div>
+                <div class=" title-row d-flex">
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center">
+                    <h6>5</h6>
+                  </div>
+                  <div class="d-flex-column">
+                    <div>
+                      <p class="title-font">Killer Queen</p>
+                    </div>
+                    <div>
+                      <p class="artist-font">Queen</p>
+                    </div>
+                  </div>
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 ">
+                    <h6>2:59</h6>
+                  </div>
+                </div>
+                <div class=" title-row d-flex">
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center">
+                    <h6>6</h6>
+                  </div>
+                  <div class="d-flex-column">
+                    <div>
+                      <p class="title-font">Fat Bottomed Girls - Live in Paris</p>
+                    </div>
+                    <div>
+                      <p class="artist-font">Queen</p>
+                    </div>
+                  </div>
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 ">
+                    <h6>4:37</h6>
+                  </div>
+                </div>
+                <div class=" title-row d-flex">
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center">
+                    <h6>7</h6>
+                  </div>
+                  <div class="d-flex-column">
+                    <div>
+                      <p class="title-font">Bohemian Rhapsody</p>
+                    </div>
+                    <div>
+                      <p class="artist-font">Queen</p>
+                    </div>
+                  </div>
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 ">
+                    <h6>5:54</h6>
+                  </div>
+                </div>
+                <div class=" title-row d-flex">
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center">
+                    <h6>8</h6>
+                  </div>
+                  <div class="d-flex-column">
+                    <div>
+                      <p class="title-font">Now I`m Here - Live At The Hammersmith Odeon</p>
+                    </div>
+                    <div>
+                      <p class="artist-font">Queen</p>
+                    </div>
+                  </div>
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 ">
+                    <h6>4:25</h6>
+                  </div>
+                </div>
+                <div class=" title-row d-flex">
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center">
+                    <h6>9</h6>
+                  </div>
+                  <div class="d-flex-column">
+                    <div>
+                      <p class="title-font">Crazy Little Thing Called Love</p>
+                    </div>
+                    <div>
+                      <p class="artist-font">Queen</p>
+                    </div>
+                  </div>
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 ">
+                    <h6>2:43</h6>
+                  </div>
+                </div>
+
+              </div>
             </div>
         </div>
     </div>
@@ -156,7 +313,7 @@
           </div>
           </div>
         </div>
-        <div class="col-6 d-flex player-column">
+        <div class="col-4 d-flex player-column">
           <div class="timeline-time">
             <p>0:12</p>
           </div>
@@ -179,7 +336,7 @@
           <p>3:34</p>
         </div>
       </div>
-        <div class="col-2">
+        <div class="col-4 d-flex justify-content-end">
           <div class="icons-player-right">
             <i class="bi bi-music-note-list icon-size-player"></i>
             <i class="bi bi-laptop icon-size-player ml-3"></i>

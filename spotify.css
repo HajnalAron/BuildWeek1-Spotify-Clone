@@ -171,9 +171,8 @@ color: #b3b3b3;
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: right;
-
  }
+
  .player-column {
 
  }
@@ -215,4 +214,66 @@ div#volume {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+}
+
+/* Album-Page Styling */
+
+#album-page-cover-image {
+    height: 234px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#queenIcon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+#album-jumbotron h5 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+}
+#album-jumbotron h1 {
+    color: white;
+    font-weight: 700;
+}
+#album-jumbotron .album-details {
+    height: 30px;
+}
+#album-jumbotron .album-details .span {
+    color: #b3b3b3;
+    font-weight: 600;
+}
+#album-playsection .album-playbutton {
+    font-size: 60px;
+    color: #1DB954;
+}
+#album-playsection .album-heart {
+    font-size: 30px;
+    
+    
+}
+#album-playsection .album-dots {
+    font-size: 30px;
+}
+#album-table hr {    
+    color: #b3b3b3;
+    background-color: #686767;
+    border: none;
+    height: 1px;
+    min-height: 1px;
+}
+#album-table .artist-font{
+    height: 25px;
+}
+
+#album-table .title-font {
+    color: white;
+    margin-bottom: 0;
+}
+
+#album-table .artist-font {
+    color: #b3b3b3;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0;
 }
