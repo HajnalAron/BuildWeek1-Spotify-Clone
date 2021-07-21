@@ -229,10 +229,25 @@ div#volume {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.card {
+.cardSubTitle {
+  padding: 0%;
+  margin-bottom: 0.5;
+}
+.cardHorizontal {
   max-width: 250px;
   max-height: 75px;
   background: #443d3e4f;
   color: white;
   padding-left: 0;
+}
+.cardVertical {
+  background: #443d3e3d;
+
+  max-height: 300px;
+
+  padding: 10px;
+  color: white;
+}
+#verticalCards {
+  max-width: 100% !important;
 }
