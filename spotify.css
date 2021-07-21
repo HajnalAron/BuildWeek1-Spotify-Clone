@@ -171,7 +171,6 @@ color: #b3b3b3;
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: right;
 
  }
  .player-column {
@@ -215,4 +214,7 @@ div#volume {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+}
+#bohemianRapsody-albumCover {
+max-width: 230px;
 }
