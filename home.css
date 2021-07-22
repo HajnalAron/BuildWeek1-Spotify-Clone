@@ -223,6 +223,156 @@ div#volume {
 #bohemianRapsody-albumCover {
   max-width: 230px;
 }
+.cardHolder {
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+.infos-container {
+  position: absolute;
+  z-index: 9;
+  transform: translateY(-3.3rem);
+  opacity: 0;
+  /* transition: opacity 0.3s ease, transform 0.3s ease; */
+  transition: all 0.3s ease;
+  overflow: hidden;
+  pointer-events: none;
+  background: #443d3e3d;
+
+  max-height: 300px;
+
+  padding: 10px;
+  color: white;
+}
+
+.infos-content {
+  padding: 3rem 1rem 1.5rem;
+  background: #181818;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.play-btn:not(:hover) {
+  background: black;
+}
+
+.play-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 50%;
+
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: transform 0.3s ease 0.4s, opacity 0.3s ease-out 0.6s;
+}
+
+.play-btn:hover {
+  animation: gradientSlide 4s ease infinite;
+  border: 0px solid transparent;
+}
+
+.play-btn::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 2px;
+  margin: auto;
+  border-style: solid;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.play-btn + span {
+  transform: translateX(-40px);
+  transition: transform 0.3s ease-out 0.4s;
+}
+
+.plus-btn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.plus-btn::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.plus-btn::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.infos-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transform: translateY(-4px);
+  opacity: 0;
+  transition: all 0.3s ease 0.2s;
+}
+.infos-content h6.prime {
+  font-size: 0.9rem;
+  color: var(--prime-color);
+}
+.infos-content h6 {
+  font-weight: 600;
+}
+.movie-footer {
+  font-size: 0.8rem;
+  transform: translateY(-4px);
+  opacity: 0;
+  transition: all 0.3s ease 0.3s;
+}
+.movie-footer i {
+  font-size: 1.2rem;
+}
+
+.cardHolder:hover {
+  transform: scale(1.2);
+  z-index: 9;
+}
+
+.cardHolder:hover .infos-container {
+  transform: translateY(-3rem);
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.cardHolder:hover p,
+.cardHolder:hover .movie-footer {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cardHolder:hover .play-btn,
+.cardHolder:hover .play-btn + span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .cardText {
   width: 100;
   white-space: nowrap;
@@ -234,11 +384,13 @@ div#volume {
   margin-bottom: 0.5;
 }
 .cardHorizontal {
-  max-width: 250px;
-  max-height: 75px;
   background: #443d3e4f;
   color: white;
   padding-left: 0;
+  transition: width 2s;
+}
+.cardHorizontal:hover {
+  width: 275px;
 }
 .cardVertical {
   background: #443d3e3d;
