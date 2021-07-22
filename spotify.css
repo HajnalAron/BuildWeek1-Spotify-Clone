@@ -294,3 +294,7 @@ div#volume {
     font-weight: 700;
     margin-bottom: 0;
 }
+.title-row:hover {
+background-color: rgb(49, 49, 49);
+border-radius: 10px;
+}
