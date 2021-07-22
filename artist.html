@@ -9,13 +9,13 @@
         <title>Spotify Clone</title>
 </head>
 <body>
-    <div id="mainBody" class="d-flex  px-0 mx-0">
+    <div id="mainBody" class="d-flex px-0 mx-0">
       <div id="gradient"></div>  
       <div id="sidebar" class="position-fixed px-1">
         <img src="/assets/spotify-icons-logos/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_White.png" class="img-fluid" alt="" id="spotifyLogo">
         <ul class="nav flex-column">
             <li class="nav-item pt-1">
-                <a class="nav-link" href="#">
+                <a class="nav-link  selctedSidebarItem" onclick="changeSidebarSelected(e)" href="#">
                   <div class="d-flex sidebarContainer">
                     <div class="sideBarIconContainer"><i class="bi bi-house-door"></i></div>
                     <h5>Home</h5>
@@ -23,7 +23,7 @@
                 </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" onclick="changeSidebarSelected(event)" href="#">
                 <div class="d-flex sidebarContainer">
                   <div class="sideBarIconContainer"><i class="bi bi-search"></i></div>
                   <h5>Search</h5>
@@ -31,7 +31,7 @@
               </a>
             </li>
             <li class="nav-item">                  
-              <a class="nav-link" href="#">
+              <a class="nav-link" onclick="changeSidebarSelected(event)" href="#">
                 <div class="d-flex sidebarContainer">
                   <div class="sideBarIconContainer"><i class="bi bi-book"></i></div>
                   <h5 class="d-inline">Your Library</h5>
@@ -201,77 +201,72 @@
               </div>
               <div class="col-12 text-white mt-3 ml-3">
                 <p class="ml-4">Popular Releases</p>
-              <div class="col-12 d-flex">
-                <div class="card mx-2" style="max-width:200px;">
+              <div class="col-12">
+                <div class="row">
+                <div class="card col-2 mx-2 mb-2" style="max-width:200px;">
                   <img class="card-img-top" src="/assets/bohemianRapsody.jpg" alt="Card image cap">
                   <div class="card-body px-0 pb-0">
                     <p class="card-text text-white">Bohemian Rapsody</p>
                     <p class="card-text text-muted">2018 · Album</p>
                   </div>
                 </div>
-                <div class="card mx-2" style="max-width:200px;">
+                <div class="card col-2 mx-2 mb-2" style="max-width:200px;">
                   <img class="card-img-top" src="/assets/bohemianRapsody.jpg" alt="Card image cap">
                   <div class="card-body px-0 pb-0">
                     <p class="card-text text-white">Bohemian Rapsody</p>
                     <p class="card-text text-muted">2018 · Album</p>
                   </div>
                 </div>
-                <div class="card mx-2" style="max-width:200px;">
+                <div class="card col-2 mx-2 mb-2" style="max-width:200px;">
                   <img class="card-img-top" src="/assets/bohemianRapsody.jpg" alt="Card image cap">
                   <div class="card-body px-0 pb-0">
                     <p class="card-text text-white">Bohemian Rapsody</p>
                     <p class="card-text text-muted">2018 · Album</p>
                   </div>
                 </div>
-                <div class="card mx-2" style="max-width:200px;">
+                <div class="card col-2 mx-2 mb-2" style="max-width:200px;">
                   <img class="card-img-top" src="/assets/bohemianRapsody.jpg" alt="Card image cap">
                   <div class="card-body px-0 pb-0">
                     <p class="card-text text-white">Bohemian Rapsody</p>
                     <p class="card-text text-muted">2018 · Album</p>
                   </div>
                 </div>
-                <div class="card mx-2" style="max-width:200px;">
+                <div class="card col-2 mx-2 mb-2" style="max-width:200px;">
                   <img class="card-img-top" src="/assets/bohemianRapsody.jpg" alt="Card image cap">
                   <div class="card-body px-0 pb-0">
                     <p class="card-text text-white">Bohemian Rapsody</p>
                     <p class="card-text text-muted">2018 · Album</p>
                   </div>
                 </div>
-                <div class="card mx-2" style="max-width:200px;">
+                <div class="card col-2 mx-2 mb-2" style="max-width:200px;">
                   <img class="card-img-top" src="/assets/bohemianRapsody.jpg" alt="Card image cap">
                   <div class="card-body px-0 pb-0">
                     <p class="card-text text-white">Bohemian Rapsody</p>
                     <p class="card-text text-muted">2018 · Album</p>
                   </div>
                 </div>
-                <div class="card mx-2" style="max-width:200px;">
+                <div class="card col-2 mx-2 mb-2" style="max-width:200px;">
                   <img class="card-img-top" src="/assets/bohemianRapsody.jpg" alt="Card image cap">
                   <div class="card-body px-0 pb-0">
                     <p class="card-text text-white">Bohemian Rapsody</p>
                     <p class="card-text text-muted">2018 · Album</p>
                   </div>
                 </div>
-                <div class="card mx-2" style="max-width:200px;">
+                <div class="card col-2 mx-2 mb-2" style="max-width:200px;">
                   <img class="card-img-top" src="/assets/bohemianRapsody.jpg" alt="Card image cap">
                   <div class="card-body px-0 pb-0">
                     <p class="card-text text-white">Bohemian Rapsody</p>
                     <p class="card-text text-muted">2018 · Album</p>
                   </div>
                 </div>
-                <div class="card mx-2" style="max-width:200px;">
+                <div class="card col-2 mx-2 mb-2" style="max-width:200px;">
                   <img class="card-img-top" src="/assets/bohemianRapsody.jpg" alt="Card image cap">
                   <div class="card-body px-0 pb-0">
                     <p class="card-text text-white">Bohemian Rapsody</p>
                     <p class="card-text text-muted">2018 · Album</p>
                   </div>
                 </div>
-                <div class="card mx-2" style="max-width:200px;">
-                  <img class="card-img-top" src="/assets/bohemianRapsody.jpg" alt="Card image cap">
-                  <div class="card-body px-0 pb-0">
-                    <p class="card-text text-white">Bohemian Rapsody</p>
-                    <p class="card-text text-muted">2018 · Album</p>
-                  </div>
-                </div>
+              </div>
               </div>
             </div>
           </div>
@@ -333,7 +328,14 @@
     </div>
     </div>
 
-    
+<script>
+  const changeSidebarSelected = function(event){
+    let currentlySelectedItem = document.querySelector('.selctedSidebarItem')
+    currentlySelectedItem.classList.remove('selctedSidebarItem')
+    event.target.classList.add('.selctedSidebarItem')
+  }
+
+</script>   
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
