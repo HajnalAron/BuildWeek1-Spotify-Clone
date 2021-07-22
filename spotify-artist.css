@@ -3,13 +3,17 @@
     align-items: stretch;  
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 #navbar-pagecontent {
     width: 100%;
     margin-left: 250px;
     min-height: 100vh;
     height: 100%;
     background:url(./assets/Queen-Adam-Lambert-Live-Around-The-World-Cover-Art-Image.jpg);
-    background-position: ;
 }
 
 #gradient {
@@ -219,9 +223,6 @@ color: #b3b3b3;
     height: 60px;
     display: flex;
     align-items: center;
-
- }
- .player-column {
 
  }
 
