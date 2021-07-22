@@ -259,15 +259,20 @@ div#volume {
   position: relative;
   transform: scale(1);
   transition: transform 0.3s ease-out;
+  transform: translateX(-10px);
 }
 .cardVertical:hover {
   transform: scale(1.2);
   z-index: 9;
+  background: #0f0f0f;
+  max-width: 100%;
 }
 .cardVertical:hover .verticalCardHoverBody {
   transform: translateY(-3rem);
   opacity: 1;
   pointer-events: initial;
+  background: #0f0f0f;
+  padding: 0% !important;
 }
 .verticalCardHoverBody {
   position: absolute;
@@ -277,15 +282,12 @@ div#volume {
   transition: all 0.3s ease;
   overflow: hidden;
   pointer-events: none;
-  border: greenyellow 2px solid;
-  padding-left: none !important;
+
+  padding-right: 3px !important;
 }
 .contentHover {
   background: #0f0f0f;
-  border: red;
+
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
-}
-.cardVertical:hover .Verticalcard-body {
-  max-width: 100% !important;
 }
