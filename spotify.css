@@ -300,3 +300,6 @@ div#volume {
   background-color: rgb(49, 49, 49);
   border-radius: 10px;
 }
+.newPlayerImageSize {
+    height: 40px;
+}
