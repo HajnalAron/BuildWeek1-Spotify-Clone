@@ -583,26 +583,37 @@ function mouseOver(event){
 let changeElement = event.target.querySelector(".title-row h6").style.visibility = "hidden"
 
 let newPath = event.target.querySelector(".title-row > div")
-let heartPath = event.target.querySelector (".title-row div:nth-child(3)") 
-let heart = document.createElement("i")
-    heart.className = "bi-heart text-muted mr-4"   
-    heartPath.insertBefore(heart, heartPath.childNodes[0])
-let playButton = document.createElement("i")
+    newPath.classList.remove("ml-3")
+    let playButton = document.createElement("i")
     playButton.className = "bi-play-fill text-white"
     newPath.appendChild(playButton)
-// console.log(changeElement)
 
-  // event.target.closest("h6").style.visibility ="hidden"
+    let heartPath = event.target.querySelector(".title-row div:nth-child(3)") 
+    let heart = document.createElement("i")
+    heart.className = "bi-heart text-muted mr-4"   
+    heartPath.insertBefore(heart, heartPath.childNodes[0])
 
-
+    let dottedLinePath = event.target.querySelector(".title-row div:nth-child(3)")
+    let dottedLine = document.createElement("i")
+    dottedLine.className ="bi-three-dots text-white ml-3"
+    dottedLinePath.appendChild(dottedLine)
+    dottedLinePath.classList.remove("mr-5")
+    
 }
-function mouseLeft(){
+function mouseLeft(event){
   let changeElement = event.target.querySelector(".title-row h6").style.visibility = "visible"
   let newPath = event.target.querySelector(".title-row > div > i")
   newPath.remove()
   let heartPath = event.target.querySelector (".title-row div:nth-child(3) > i") 
   heartPath.remove()
-}
+  let addClassAgain = event.target.querySelector(".title-row > div")
+  addClassAgain.classList.add("ml-3")
+
+  let dottedLinePath = event.target.querySelector(".title-row div:nth-child(3) > i")
+  dottedLinePath.remove()
+  let dottedLineClass = event.target.querySelector(".title-row div:nth-child(3)")
+  dottedLineClass.classList.add("mr-5")
+  }
 
 </script>
     
