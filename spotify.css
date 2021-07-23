@@ -136,7 +136,7 @@ li a div h5 {
 #player {
   height: 60px;
   background-color: #181818;
-  z-index: 10;
+  z-index: 100;
 }
 #player-album-image {
   height: 40px;
@@ -266,6 +266,10 @@ div#volume {
 }
 #album-playsection .album-heart {
   font-size: 30px;
+}
+#playsectionHeartButton{
+    background-color: transparent;
+    border: none;
 }
 #album-playsection .album-dots {
   font-size: 30px;

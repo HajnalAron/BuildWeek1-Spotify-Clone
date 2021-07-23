@@ -142,7 +142,9 @@
                   <i class="bi bi-play-circle-fill album-playbutton"></i>
                 </div>
                 <div class="d-flex align-items-center ml-5">
-                  <i class="bi bi-heart album-heart text-white-50"></i>
+                  <button id="playsectionHeartButton" type="button" onclick="playsectionHeartColor()">
+                    <i id="playsectionHeart" class="bi bi-heart album-heart text-white-50"></i>
+                  </button>
                 </div>
                 <div class="d-flex align-items-center ml-4">
                   <i class="bi bi-three-dots album-dots text-white-50"></i>
@@ -577,6 +579,21 @@
     </div>
 <script>
 
+function playsectionHeartColor() {
+  let playsection = document.querySelector("#playsectionHeart")
+  
+  if(playsection.className == "bi bi-heart album-heart text-white-50"){
+    playsection.classList.remove("text-white-50")
+    playsection.classList.add("text-success") 
+  } else { 
+    playsection.classList.remove("text-success")
+    playsection.classList.add("text-white-50")
+  }
+  
+
+  console.log("klick")
+}
+
 function mouseOver(event){
 
   
@@ -593,12 +610,17 @@ let newPath = event.target.querySelector(".title-row > div")
     heart.className = "bi-heart text-muted mr-4"   
     heartPath.insertBefore(heart, heartPath.childNodes[0])
 
+
+
+
+
     let dottedLinePath = event.target.querySelector(".title-row div:nth-child(3)")
     let dottedLine = document.createElement("i")
     dottedLine.className ="bi-three-dots text-white ml-3"
     dottedLinePath.appendChild(dottedLine)
     dottedLinePath.classList.remove("mr-5")
     
+
 }
 function mouseLeft(event){
   let changeElement = event.target.querySelector(".title-row h6").style.visibility = "visible"
