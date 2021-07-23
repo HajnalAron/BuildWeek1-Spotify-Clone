@@ -8,3 +8,9 @@ else if (hrs >= 12 && hrs <= 17) greet = "Good Afternoon";
 else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
 
 document.getElementById("greet").innerHTML = "<b>" + greet;
+
+const changeSidebarSelected = function(event){
+    let currentlySelectedItem = document.querySelector('.selctedSidebarItem')
+    currentlySelectedItem.classList.remove('selctedSidebarItem')
+    event.target.classList.add('selctedSidebarItem')
+  }
