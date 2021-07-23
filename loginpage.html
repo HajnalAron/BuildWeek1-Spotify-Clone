@@ -67,6 +67,7 @@
         <div class="col-12 d-flex flex-column input py-0">
           <div>
             <input
+              id="UserNameInput"
               type="text"
               class="form-control mb-2"
               placeholder="Email address or username"
@@ -76,7 +77,8 @@
           </div>
           <div>
             <input
-              type="text"
+              id="PasswordInput"
+              type="password"
               class="form-control mb-2"
               placeholder="Password"
               aria-label="Username"
@@ -99,13 +101,16 @@
             </div>
           </div>
           <div>
-            <button
+            <a
+              onclick="logIn()"
+              id="loginButton"
               type="button"
+              href=""
               style="background: #47b850; width: 270px"
               class="btn rounded-pill px-5"
             >
               Login
-            </button>
+            </a>
           </div>
         </div>
 
@@ -137,7 +142,17 @@
         </div>
       </div>
     </div>
-
+    <script>
+      let username = "Strive";
+      let password = "12345";
+      const logIn = function () {
+        let currentUser = document.querySelector("#UserNameInput").value;
+        let currentPassword = document.querySelector("#PasswordInput").value;
+        if (currentUser === username && currentPassword === password) {
+          document.getElementById("loginButton").href = "/homepage.html";
+        } else alert("No bueno");
+      };
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
