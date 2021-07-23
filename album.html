@@ -10,11 +10,11 @@
 </head>
 <body>
     <div id="mainBody" class="d-flex">
-      <div id="sidebar" class="position-fixed px-1">
+      <div id="sidebar" class="position-fixed px-1"> 
         <img src="/assets/spotify-icons-logos/spotify-icons-logos/logos/01_RGB/02_PNG/Spotify_Logo_RGB_White.png" class="img-fluid" alt="" id="spotifyLogo">
         <ul class="nav flex-column">
             <li class="nav-item pt-1">
-                <a class="nav-link" href="#">
+                <a class="nav-link  selctedSidebarItem" onclick="changeSidebarSelected(event)" href="#">
                   <div class="d-flex sidebarContainer">
                     <div class="sideBarIconContainer"><i class="bi bi-house-door"></i></div>
                     <h5>Home</h5>
@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" onclick="changeSidebarSelected(event)" href="#">
                 <div class="d-flex sidebarContainer">
                   <div class="sideBarIconContainer"><i class="bi bi-search"></i></div>
                   <h5>Search</h5>
@@ -30,7 +30,7 @@
               </a>
             </li>
             <li class="nav-item">                  
-              <a class="nav-link" href="#">
+              <a class="nav-link" onclick="changeSidebarSelected(event)" href="#">
                 <div class="d-flex sidebarContainer">
                   <div class="sideBarIconContainer"><i class="bi bi-book"></i></div>
                   <h5 class="d-inline">Your Library</h5>
@@ -90,7 +90,7 @@
               <a class="nav-link" href="#">Jazz Classics </a>
             </li>
           </ul>
-    </div>
+      </div>
         <div id="navbar-pagecontent">    
           <div id=navbar-pagecontent-gradient>
 
@@ -599,6 +599,12 @@ function mouseLeft(){
   newPath.remove()
  
 }
+
+const changeSidebarSelected = function(event){
+    let currentlySelectedItem = document.querySelector('.selctedSidebarItem')
+    currentlySelectedItem.classList.remove('selctedSidebarItem')
+    event.target.classList.add('selctedSidebarItem')
+  }
 
 </script>
     
