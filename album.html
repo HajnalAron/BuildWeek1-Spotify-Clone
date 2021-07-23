@@ -589,19 +589,12 @@ function changePlayer(event) {
   let addImage = document.querySelector("#player > div > div >div > div")
   addImage.appendChild(newImage)
 
-
-
   let titleText = event.target.querySelector(".title-row .d-flex-column p")
-  
   console.log(titleText.innerHTML)
-
-  
   let changeToNewText = document.querySelector("#player .player-album")
   changeToNewText.innerHTML = titleText.innerHTML
 
  }
-
-
 
 function playsectionHeartColor() {
 
@@ -615,12 +608,24 @@ function playsectionHeartColor() {
   }
 //  console.log("klick")
 }
+
 function mouseOver(event){
  
-let changeElement = event.target.querySelector(".title-row h6").style.visibility = "hidden"
+    let changeElement = event.target.querySelector(".title-row h6").style.visibility = "hidden"
 
-let newPath = event.target.querySelector(".title-row > div")
+    let newPath = event.target.querySelector(".title-row > div")
+
+    let checkPath = event.target.querySelector(".title-row >div h6") 
+
+    if (checkPath.innerHTML > 9) {
+    newPath.classList.remove("mr-3")
+    newPath.classList.add("mr-2")
+  }
+  
+    newPath.classList.remove("ml-2")
     newPath.classList.remove("ml-3")
+    
+
     let playButton = document.createElement("i")
     playButton.className = "bi-play-fill text-white"
     newPath.appendChild(playButton)
@@ -647,6 +652,11 @@ function mouseLeft(event){
   heartPath.remove()
   let addClassAgain = event.target.querySelector(".title-row > div")
   addClassAgain.classList.add("ml-3")
+  addClassAgain.classList.add("ml-2")
+
+  let checkPath = event.target.querySelector(".title-row >div h6") 
+
+
 
   let dottedLinePath = event.target.querySelector(".title-row div:nth-child(3) > i")
   dottedLinePath.remove()

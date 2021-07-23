@@ -303,3 +303,6 @@ div#volume {
 .newPlayerImageSize {
     height: 40px;
 }
+.title-row p, .title-row h6 {
+    pointer-events: none;
+}
