@@ -479,7 +479,7 @@
                       <p class="artist-font">Queen</p>
                     </div>
                   </div>
-                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 ">
+                  <div class="d-flex ml-3 mr-3 text-white-50 align-items-center ml-auto mr-5 last">
                     <h6>3:47</h6>
                   </div>
                 </div>
@@ -583,9 +583,12 @@ function mouseOver(event){
 let changeElement = event.target.querySelector(".title-row h6").style.visibility = "hidden"
 
 let newPath = event.target.querySelector(".title-row > div")
-
+let heartPath = event.target.querySelector (".title-row div:nth-child(3)") 
+let heart = document.createElement("i")
+    heart.className = "bi-heart text-muted mr-4"   
+    heartPath.insertBefore(heart, heartPath.childNodes[0])
 let playButton = document.createElement("i")
-    playButton.className ="bi-play-fill text-white"
+    playButton.className = "bi-play-fill text-white"
     newPath.appendChild(playButton)
 // console.log(changeElement)
 
@@ -597,7 +600,8 @@ function mouseLeft(){
   let changeElement = event.target.querySelector(".title-row h6").style.visibility = "visible"
   let newPath = event.target.querySelector(".title-row > div > i")
   newPath.remove()
- 
+  let heartPath = event.target.querySelector (".title-row div:nth-child(3) > i") 
+  heartPath.remove()
 }
 
 </script>
