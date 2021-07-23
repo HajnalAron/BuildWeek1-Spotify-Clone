@@ -1,6 +1,7 @@
 #mainBody {
   display: flex;
   align-items: stretch;
+  margin-left: 15px;
 }
 
 html,
